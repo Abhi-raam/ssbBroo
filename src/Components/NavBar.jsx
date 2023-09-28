@@ -12,7 +12,7 @@ function NavBar() {
             <div className="navbar  bg-white backdrop-blur">
                 <div className="flex-1 space-x-3">
                     <img className='rounded-full w-12' src={logo} alt="" />
-                    <a className="font-semibold text-xl md:text-2xl lg:text-3xl">SSB <span className='text-red-700'>BRO</span></a>
+                    <a className="font-bold text-xl md:text-2xl lg:text-3xl">SSB <span className='text-red-700'>BRO</span></a>
                 </div>
                 <div>
                     <ul className="lg:flex items-center space-x-6  font-semibold">
