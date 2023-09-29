@@ -5,8 +5,31 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import TestimonialCard from './TestimonialCard.jsx';
 
 function Testimonial() {
+    let students = [
+        {
+            Name : 'Student 1',
+            Profession : 'Sample Profession',
+            Writes : 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used'
+        },
+        {
+            Name : 'Student 2',
+            Profession : 'Sample Profession',
+            Writes : 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used'
+        },
+        {
+            Name : 'Student 3',
+            Profession : 'Sample Profession',
+            Writes : 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used'
+        },
+        {
+            Name : 'Student 4',
+            Profession : 'Sample Profession',
+            Writes : 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used'
+        },
+    ]
   return (
     <div className='p-5 backdrop-filter backdrop-blur-lg bg-sky-00 opacity-100'>
         <div className='text-center py-4'>
@@ -18,7 +41,7 @@ function Testimonial() {
         spaceBetween={20}
         loop={true}
         autoplay={{
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
         pagination={{
@@ -28,91 +51,11 @@ function Testimonial() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper pt-8"
       >
-        <SwiperSlide>
-            <div className='justify-items-center grid'>
-                <div>
-                    <img className='w-36 rounded-full' src={mentor} alt="" />
-                </div>
-                <div>
-                    <h1 className='text-2xl font-bold'>Student 1</h1>
-                    <h1>Profession</h1>
-                </div>
-                <div className='bg-sky-500 p-1 text-white rounded-md'>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used</p>
-                </div>
-            </div>
+        {students.map((obj)=>(
+        <SwiperSlide >
+            <TestimonialCard {...obj}/>
         </SwiperSlide>
-        <SwiperSlide>
-            <div className='justify-items-center grid'>
-                <div>
-                    <img className='w-36 rounded-full' src={mentor} alt="" />
-                </div>
-                <div>
-                    <h1 className='text-2xl font-bold'>Student 2</h1>
-                    <h1>Profession</h1>
-                </div>
-                <div className='bg-sky-500 p-1 text-white rounded-md'>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='justify-items-center grid'>
-                <div>
-                    <img className='w-36 rounded-full' src={mentor} alt="" />
-                </div>
-                <div>
-                    <h1 className='text-2xl font-bold'>Student 3</h1>
-                    <h1>Profession</h1>
-                </div>
-                <div className='bg-sky-500 p-1 text-white rounded-md'>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='justify-items-center grid'>
-                <div>
-                    <img className='w-36 rounded-full' src={mentor} alt="" />
-                </div>
-                <div>
-                    <h1 className='text-2xl font-bold'>Student 4</h1>
-                    <h1>Profession</h1>
-                </div>
-                <div className='bg-sky-500 p-1 text-white rounded-md'>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='justify-items-center grid'>
-                <div>
-                    <img className='w-36 rounded-full' src={mentor} alt="" />
-                </div>
-                <div>
-                    <h1 className='text-2xl font-bold'>Student 5</h1>
-                    <h1>Profession</h1>
-                </div>
-                <div className='bg-sky-500 p-1 text-white rounded-md'>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className='justify-items-center grid'>
-                <div>
-                    <img className='w-36 rounded-full' src={mentor} alt="" />
-                </div>
-                <div>
-                    <h1 className='text-2xl font-bold'>Student 6</h1>
-                    <h1>Profession</h1>
-                </div>
-                <div className='bg-sky-500 p-2 text-white rounded-md'>
-                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used</p>
-                </div>
-            </div>
-        </SwiperSlide>
-        
+        ))}
       </Swiper>
     </div>
   )
