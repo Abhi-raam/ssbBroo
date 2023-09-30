@@ -32,7 +32,7 @@ function Testimonial() {
     ]
   return (
     <div className='p-5 backdrop-filter backdrop-blur-lg bg-sky-00 opacity-100'>
-        <div className='text-center py-4'>
+        <div className='text-center py-4' data-aos="fade-up" data-aos-duration="1000"   data-aos-once="false">
             <h1 className="text-sky-500 font-bold">TESTIMONIAL</h1>
             <h1 className="font-bold text-4xl">Our Students Say!</h1>
         </div>

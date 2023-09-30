@@ -7,7 +7,8 @@ import About from './Components/About'
 import Courses from './Components/Courses'
 import Mentor from './Components/Mentor'
 import Testimonial from './Components/Testimonial'
-import OnlineSession from './Components/OnlineSession'
+import Footer from './Components/Footer'
+
 function App() {
   return (
     <div className='App'>
@@ -18,7 +19,7 @@ function App() {
       <Courses/>
       <Mentor/>
       <Testimonial/>
-      <OnlineSession/>
+      <Footer/>
     </div>
   )
 }

@@ -4,13 +4,13 @@ import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 function Mentor() {
   return (
-    <div className="px-4 pt-5 pb-16">
-      <div className="text-center space-y-3">
+    <div id="mentor" className="px-4 pt-8 pb-16">
+      <div className="text-center space-y-3" data-aos="fade-up" data-aos-duration="1500"   data-aos-once="false">
         <h1 className="text-sky-500 font-bold">MENTOR</h1>
         <h1 className="font-bold  text-4xl">EXPERT MENTOR</h1>
       </div>
-      <div className="grid justify-items-center pt-4">
-        <div className="">
+      <div className="grid justify-items-center pt-4" data-aos="fade-up" data-aos-duration="1500"   data-aos-once="false">
+        <div className=""data-aos="fade-up" data-aos-duration="1000"   data-aos-once="false">
           <img className="w-full hover:scale-[1.04] transition delay-150 duration-500 ease-in-out md:w-72 rounded-md" src={mentor} alt="" />
           <div className="">
             <div className="flex  justify-center  ">

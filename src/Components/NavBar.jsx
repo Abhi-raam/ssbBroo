@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 import logo from '../assets/logo.jpg'
 
 function NavBar() {
@@ -16,23 +16,20 @@ function NavBar() {
                 </div>
                 <div>
                     <ul className="lg:flex items-center space-x-6  font-semibold">
-                        <li className='lg:inline-block hidden cursor-pointer hover:text-sky-600 transition delay-75 duration-150 ease-in-out'>
-                            {/* <Link to="home" smooth={true} duration={500}>Home</Link> */}
-                            <a href="">Home</a>
+                        <li className='lg:inline-block hidden cursor-pointer font-bold hover:text-sky-600 transition delay-75 duration-150 ease-in-out'>
+                            <Link to="home" smooth={true} duration={500}>Home</Link>
                         </li>
-                        <li className="lg:inline-block hidden cursor-pointer hover:text-sky-600 transition delay-75 duration-150 ease-in-out">
-
-                            {/* <Link to="about" smooth={true} duration={500}>About Me</Link> */}
-                            <a href="">About</a>
+                        <li className="lg:inline-block hidden cursor-pointer font-bold hover:text-sky-600 transition delay-75 duration-150 ease-in-out">
+                            <Link to="about" smooth={true} duration={500}>About</Link>
                         </li>
-                        <li className="lg:inline-block hidden cursor-pointer hover:text-sky-600 transition delay-75 duration-150 ease-in-out">
-
-                            {/* <Link to="knowledge" smooth={true} duration={500}>Knowledge</Link> */}
-                            <a href="">Course</a>
+                        <li className="lg:inline-block hidden cursor-pointer font-bold hover:text-sky-600 transition delay-75 duration-150 ease-in-out">
+                            <Link to="course" smooth={true} duration={500}>Course</Link>
                         </li>
-                        <li className="lg:inline-block hidden cursor-pointer hover:text-sky-600 transition delay-75 duration-150 ease-in-out">
-                            {/* <Link to="skills" smooth={true} duration={500}>Skills</Link> */}
-                            <a href="">Contact</a>
+                        <li className="lg:inline-block hidden cursor-pointer font-bold hover:text-sky-600 transition delay-75 duration-150 ease-in-out">
+                            <Link to="mentor" smooth={true} duration={500}>Mentor</Link>
+                        </li>
+                        <li className="lg:inline-block hidden cursor-pointer font-bold hover:text-sky-600 transition delay-75 duration-150 ease-in-out">
+                            <Link to="contact" smooth={true} duration={500}>Contact</Link>
                         </li>
                     </ul>
                 </div>
@@ -48,21 +45,20 @@ function NavBar() {
                 <div className="relative">
                     <div className='grid backdrop-filter backdrop-blur  bg-white justify-end font-semibold absolute top-0 left-0 right-0'>
                         <ul className="mr-3 space-y-2" >
-                            <li className='hover:text-sky-600 transition delay-75 duration-150 ease-in-out'>
-                                {/* <Link to="home" smooth={true} duration={500}>Home</Link> */}
-                                <a href="">Home</a>
+                            <li className='hover:text-sky-600 font-bold transition delay-75 duration-150 ease-in-out'>
+                                <Link to="home" smooth={true} duration={500}>Home</Link>
                             </li>
-                            <li className='hover:text-sky-600 transition delay-75 duration-150 ease-in-out'>
-                                {/* <Link to="about" smooth={true} duration={500}>About Me</Link> */}
-                                <a href="">About</a>
+                            <li className='hover:text-sky-600 font-bold transition delay-75 duration-150 ease-in-out'>
+                                <Link to="about" smooth={true} duration={500}>About</Link>
                             </li>
-                            <li className='hover:text-sky-600 transition delay-75 duration-150 ease-in-out'>
-                                {/* <Link to="knowledge" smooth={true} duration={500}>Knowledge</Link> */}
-                                <a href="">Course</a>
+                            <li className='hover:text-sky-600 font-bold transition delay-75 duration-150 ease-in-out'>
+                                <Link to="course" smooth={true} duration={500}>Course</Link>
                             </li>
-                            <li className='hover:text-sky-600 transition delay-75 duration-150 ease-in-out'>
-                                {/* <Link to="skills" smooth={true} duration={500}>Skills</Link> */}
-                                <a href="">Contact</a>
+                            <li className='hover:text-sky-600 font-bold transition delay-75 duration-150 ease-in-out'>
+                                <Link to="mentor" smooth={true} duration={500}>Mentor</Link>
+                            </li>
+                            <li className='hover:text-sky-600 font-bold transition delay-75 duration-150 ease-in-out'>
+                                <Link to="contact" smooth={true} duration={500}>Contact</Link>
                             </li>
                         </ul>
                     </div>

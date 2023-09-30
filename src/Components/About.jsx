@@ -4,9 +4,9 @@ import { FaArrowRight } from 'react-icons/fa';
 
 function About() {
     return (
-        <div className="p-5 mx-auto px-4">
+        <div id="about" className="p-5 mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 ">
-                <div className="space-y-6">
+                <div className="space-y-6" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000" data-aos-once="false">
                     <h1 className="text-sky-500 font-bold">ABOUT US</h1>
                     <h1 className="font-bold text-4xl">Welcome TO SSB <span className="text-red-700">BRO</span></h1>
                     <div className="px-2 ">
@@ -51,7 +51,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="space-y-6">
+                <div className="space-y-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false">
                     <img className="rounded-md " src={aboutImg} alt="" />
                 </div>
             </div>
